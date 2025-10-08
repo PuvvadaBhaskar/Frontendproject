@@ -8,10 +8,6 @@ import Home from './Homepage/Home'
 function App() {
   return (
     <BrowserRouter>
-      <nav style={{padding:'1rem'}}>
-        <Link to="/" style={{marginRight: '1rem'}}>Login</Link>
-        <Link to="/signup">Sign Up</Link>
-      </nav>
       <Routes>
         <Route path="/" element={<LoginPage/>} />
         <Route path="/signup" element={<SignupPage/>} />
